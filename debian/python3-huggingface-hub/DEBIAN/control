@@ -1,0 +1,15 @@
+Package: python3-huggingface-hub
+Source: huggingface-hub
+Version: 0.30.0.dev0-1
+Architecture: all
+Maintainer: Kohei Sendai<kouhei.sendai@gmail.com>
+Installed-Size: 1904
+Depends: python3-filelock, python3-fsspec, python3-packaging, python3-requests, python3-tqdm, python3-typing-extensions, python3-yaml, python3:any
+Suggests: python-huggingface-hub-doc
+Section: python
+Priority: optional
+Homepage: https://github.com/huggingface/huggingface_hub
+Description: <insert up to 60 chars description> (Python 3)
+ <Insert long description, indented with spaces.>
+ .
+ This package installs the library for Python 3.
