@@ -1,5 +1,0 @@
-huggingface-hub (0.30.0.dev0-1) UNRELEASED; urgency=medium
-
-  * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
-
- -- Kohei Sendai <kouhei.sendai@gmail.com>  Wed, 12 Mar 2025 20:11:35 +0000
