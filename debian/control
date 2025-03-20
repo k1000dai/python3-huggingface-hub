@@ -1,8 +1,14 @@
 Source: huggingface-hub
 Section: python
 Priority: optional
-Maintainer: Kohei Sendai<kouhei.sendai@gmail.com>
+Maintainer: Debian Deep Learning Team <debian-ai@lists.debian.org>
+Uploaders: Kohei Sendai <kouhei.sendai@gmail.com>
 Rules-Requires-Root: no
+#Testsuite: autopkgtest-pkg-python
+Standards-Version: 4.6.2
+Homepage: https://github.com/huggingface/huggingface_hub
+Vcs-Browser: https://salsa.debian.org/deeplearning-team/huggingface-hub
+Vcs-Git: https://salsa.debian.org/deeplearning-team/huggingface-hub.git
 Build-Depends:
  debhelper-compat (= 13),
  dh-sequence-python3,
@@ -15,11 +21,6 @@ Build-Depends:
  python3-fsspec,
  python3-requests,
  python3-typing-extensions
-#Testsuite: autopkgtest-pkg-python
-Standards-Version: 4.6.2
-Homepage: https://github.com/huggingface/huggingface_hub
-#Vcs-Browser: https://salsa.debian.org/debian/huggingface-hub
-#Vcs-Git: https://salsa.debian.org/debian/huggingface-hub.git
 
 Package: python3-huggingface-hub
 Architecture: all
@@ -28,18 +29,7 @@ Depends:
  ${misc:Depends},
 Suggests:
  python-huggingface-hub-doc,
-Description: <insert up to 60 chars description> (Python 3)
- <Insert long description, indented with spaces.>
- .
+Description: The huggingface_hub library allows you to interact with the Hugging Face Hub
  This package installs the library for Python 3.
+ The huggingface_hub library allows you to interact with the Hugging Face Hub, a platform democratizing open-source Machine Learning for creators and collaborators. Discover pre-trained models and datasets for your projects or play with the thousands of machine learning apps hosted on the Hub. You can also create and share your own models, datasets and demos with the community. The huggingface_hub library provides a simple way to do all these things with Python.
 
-Package: python-huggingface-hub-doc
-Section: doc
-Architecture: all
-Depends:
- ${sphinxdoc:Depends},
- ${misc:Depends},
-Description: <insert up to 60 chars description> (common documentation)
- <Insert long description, indented with spaces.>
- .
- This is the common documentation package.
